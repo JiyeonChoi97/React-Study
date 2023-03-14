@@ -4,6 +4,10 @@
  * @see http://www.google.com
  */
 import styled from "styled-components";
+
+import Counter from "@/components/Counter";
+import Input from "@/components/Input";
+
 type Props = {
     title: string;
     description?: number;
@@ -16,8 +20,10 @@ const ContentsContainer = styled.main`
 function Contents({ title, description }: Props) {
     return (
         <ContentsContainer>
-            <h1>{title}</h1>
-            <div>{description}</div>
+            {/* <h2>{title}</h2> */}
+            {/* <h2>{description}</h2> */}
+            <Counter />
+            <Input />
         </ContentsContainer>
     );
 }

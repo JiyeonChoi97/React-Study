@@ -19,7 +19,7 @@ const SidebarContainer = styled.div`
 function Sidebar({ title, description }: Props) {
     return (
         <SidebarContainer>
-            <h1>Sidebar</h1>
+            <h2>Sidebar</h2>
             <div>{title}</div>
             <div>{description}</div>
         </SidebarContainer>
