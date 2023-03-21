@@ -7,6 +7,7 @@ import styled from "styled-components";
 
 import Counter from "@/components/Counter";
 import Input from "@/components/Input";
+import Calculator from "@/components/Calculator";
 
 type Props = {
     title: string;
@@ -22,8 +23,9 @@ function Contents({ title, description }: Props) {
         <ContentsContainer>
             {/* <h2>{title}</h2> */}
             {/* <h2>{description}</h2> */}
-            <Counter />
-            <Input />
+            {/* <Counter /> */}
+            {/* <Input /> */}
+            <Calculator />
         </ContentsContainer>
     );
 }
