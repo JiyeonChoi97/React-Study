@@ -25,7 +25,7 @@ function Counter() {
 
     // event
     const onIncrease = () => {
-        // 3번 호출해도 한번만 적용(read-only 사용 지양)
+        // 3번 호출해도 한번만 적용(read-only, 사용 지양)
         // setCount(count + 1);
         // setCount(count + 1);
         // setCount(count + 1);

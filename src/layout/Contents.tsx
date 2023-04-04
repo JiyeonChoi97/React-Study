@@ -8,6 +8,9 @@ import styled from "styled-components";
 import Counter from "@/components/Counter";
 import Input from "@/components/Input";
 import Calculator from "@/components/Calculator";
+import Popup from "@/components/Popup";
+import LiveClock from "@/components/LiveClock";
+import TodoList from "@/components/ToDoList";
 
 type Props = {
     title: string;
@@ -25,7 +28,12 @@ function Contents({ title, description }: Props) {
             {/* <h2>{description}</h2> */}
             {/* <Counter /> */}
             {/* <Input /> */}
-            <Calculator />
+            {/* <Calculator /> */}
+            <Popup content="팝업 내용" btnTitle="버튼 내용" />
+            <hr />
+            <LiveClock />
+            <hr />
+            <TodoList />
         </ContentsContainer>
     );
 }
