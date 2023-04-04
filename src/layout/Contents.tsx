@@ -29,10 +29,10 @@ function Contents({ title, description }: Props) {
             {/* <Counter /> */}
             {/* <Input /> */}
             {/* <Calculator /> */}
-            <Popup content="팝업 내용" btnTitle="버튼 내용" />
-            <hr />
-            <LiveClock />
-            <hr />
+            {/* <Popup content="팝업 내용" btnTitle="버튼 내용" /> */}
+            {/* <hr /> */}
+            {/* <LiveClock /> */}
+            {/* <hr />s */}
             <TodoList />
         </ContentsContainer>
     );
