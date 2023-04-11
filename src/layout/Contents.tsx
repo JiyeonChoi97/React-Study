@@ -1,16 +1,10 @@
+import styled from "styled-components";
+import { Outlet } from "react-router-dom";
 /**
  *
  * @description Content 컴포넌트
  * @see http://www.google.com
  */
-import styled from "styled-components";
-
-import Counter from "@/components/Counter";
-import Input from "@/components/Input";
-import Calculator from "@/components/Calculator";
-import Popup from "@/components/Popup";
-import LiveClock from "@/components/LiveClock";
-import TodoList from "@/components/ToDoList";
 
 type Props = {
     title: string;
@@ -24,16 +18,9 @@ const ContentsContainer = styled.main`
 function Contents({ title, description }: Props) {
     return (
         <ContentsContainer>
-            {/* <h2>{title}</h2> */}
-            {/* <h2>{description}</h2> */}
-            {/* <Counter /> */}
-            {/* <Input /> */}
-            {/* <Calculator /> */}
-            {/* <Popup content="팝업 내용" btnTitle="버튼 내용" /> */}
-            {/* <hr /> */}
-            {/* <LiveClock /> */}
-            {/* <hr />s */}
-            <TodoList />
+            {/* 부모 path로부터 children path로 명시한 컴포넌트들을 Outlet에서 컴포넌트를 렌더링 한다. */}
+            {/* Outlet은 렌더링 되기 위한 껍데기인데 모두 적용되는건 아니고 children path에만 적용된다. */}
+            <Outlet />
         </ContentsContainer>
     );
 }
