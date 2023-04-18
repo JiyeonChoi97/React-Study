@@ -18,6 +18,7 @@ function NotFoundPage() {
     const onBack = () => {
         navigate(-1); // 뒤로가기
         // navigate("counter"); // 직접 path 경로 입력해도 된다.
+        
     };
 
     // view

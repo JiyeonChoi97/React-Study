@@ -5,6 +5,9 @@
  */
 
 import styled from "styled-components";
+// import loginState from "@/global/loginState";
+// import { useRecoilState } from "recoil";
+import { useLoginState } from "@/global/loginState";
 
 // type, 오타, 필수여부 체크(필수가 아닐 경우 '?'사용)
 type Props = {
@@ -19,11 +22,17 @@ const HeaderContainer = styled.header`
 `;
 
 function Header({ title, description }: Props) {
+    // global State
+    // const [loginInfo] = useRecoilState(loginState);
+
+    // custom hook
+    const { login, setLogin } = useLoginState();
+
     // view
     return (
         <HeaderContainer>
             <h2>{title}</h2>
-            <h2>{description}</h2>
+            <h2>{login.userId}</h2>
         </HeaderContainer>
     );
 }
