@@ -11,6 +11,8 @@
         "@types/node": "^16.7.13",
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
+        "axios": "^1.3.6",
+        "env-cmd": "^10.1.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.10.0",
@@ -22,8 +24,10 @@
         "web-vitals": "^2.1.0"
     },
     "scripts": {
-        "start": "craco start",
-        "build": "craco build",
+        "start": "env-cmd -f .env.development craco start",
+        "start:prod": "env-cmd -f .env.production craco start",
+        "build": "env-cmd -f .env.development craco build",
+        "build:prod": "env-cmd -f .env.production craco build",
         "test": "craco test"
     },
     "eslintConfig": {

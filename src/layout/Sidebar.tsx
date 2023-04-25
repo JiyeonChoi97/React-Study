@@ -108,6 +108,19 @@ function Sidebar({ title, description }: Props) {
                         Input
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink
+                        to="board"
+                        style={({ isActive, isPending }) => {
+                            return {
+                                fontWeight: isActive ? "bold" : "",
+                                color: isPending ? "red" : "black",
+                            };
+                        }}
+                    >
+                        Board
+                    </NavLink>
+                </li>
             </ul>
         </SidebarContainer>
     );

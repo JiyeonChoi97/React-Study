@@ -5,6 +5,7 @@ import Contents from "@/layout/Contents";
 import Footer from "@/layout/Footer";
 import Sidebar from "@/layout/Sidebar";
 import GlobalStyle from "@/style/GlobalStyle";
+import useAxiosInterceptor from "./hook/useAxiosInterceptor";
 
 const AppContainer = styled.div`
     display: flex;
@@ -15,6 +16,9 @@ const AppContainer = styled.div`
 
 function App() {
     // script
+
+    // hook
+    useAxiosInterceptor();
 
     // view
     return (

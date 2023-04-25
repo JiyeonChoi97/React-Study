@@ -6,6 +6,7 @@ import Counter from "@/components/Counter";
 import LiveClock from "@/components/LiveClock";
 import TodoList from "@/components/ToDoList";
 import Input from "@/components/Input";
+import Board from "./components/Board";
 // 바뀌는 URL을 한곳에서 정의
 const router = createBrowserRouter([
     {
@@ -33,8 +34,12 @@ const router = createBrowserRouter([
                 element: <TodoList />,
             },
             {
-                path: "input",
+                path: "/input",
                 element: <Input />,
+            },
+            {
+                path: "/board",
+                element: <Board />,
             },
         ],
     },
